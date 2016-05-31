@@ -30,7 +30,7 @@ sudo apt-get install git ruby-dev
 sudo gem install bundler
 cd 
 git clone git@github.com:NextThingCo/DIP-Docs.git
-cd PocketCHIP-Docs
+cd DIP-Docs
 bundle install
 ```
 
@@ -39,7 +39,7 @@ bundle install
 #### Getting El Capitan to Behave
 Installing on El Capitan (OS X 10.11) can be difficult. 
 Once you clone the directory, you may need to `cd` to the chipdocs directory, then run the command `bundle install`. 
-If you get errors when you try to run `rake publish` after that, try `bundle update` to install the bundler, and then try `rake publish` again. 
+If you get errors when you try to run `./deploy.sh` after that, try `bundle update` to install the bundler, and then try `./deploy.sh` again. 
 
 There may be some other black magic involved in getting it working on El Capitan, including:
 ```
@@ -58,5 +58,5 @@ bundle exec middleman server
 
 ### Publish
 
-If you are a contributor, it is easy to publish any changes you make. First, push your local changes to the master branch, then, in a terminal `cd` to your local repo and use the command `rake publish`. This will render static html pages, and push the changes to the gh-pages branch of this repo, making them live at http://docs.getchip.com
+If you are a contributor, it is easy to publish any changes you make. First, push your local changes to the master branch, then, in a terminal `cd` to your local repo and use the command `./deploy.sh`. This will render static html pages, and push the changes to the gh-pages branch of this repo, making them live at http://docs.getchip.com
 
