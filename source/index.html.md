@@ -7,7 +7,10 @@ toc_footers:
   - <a href='http://github.com/NextThingCo/DIP-Docs'>Have something to add or change?<br>Visit our GitHub!</a>
 
 includes:
-  - _placeholder.md
+  - _whatsadip.md
+  - _hdmi.md
+  - _vga.md
+  - _updatechipos.md
 
 search: true
 ---
