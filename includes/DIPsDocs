@@ -1,49 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Next Thing Co. DIPs for C.H.I.P. Documentation</title>
-
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="javascripts/all.js"></script>
-
-  </head>
-
-  <body class="index">
-    <a href="#" id="nav-button">
-      <span>
-        NAVI
-        <img src="images/navbar.png" />
-      </span>
-    </a>
-    <div class="tocify-wrapper">
-      <div class="nav-bar-logo">
-        <img src="images/chipLogo.png" />
-      </div>
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
-      <div id="toc">
-      </div>
-        <ul class="toc-footer">
-            <li><a href='http://github.com/NextThingCo/DIP-Docs'>Have something to add or change?<br>Visit our GitHub!</a></li>
-        </ul>
-    </div>
-    <div class="page-wrapper">
-      <div class="dark-box"></div>
-      <div class="content">
-        
-          <h1 id="what-s-a-dip">What’s a DIP?</h1>
+<h1 id="what-s-a-dip">What’s a DIP?</h1>
 
 <p>DIPs are accessory boards that attach directly to C.H.I.P. and add extra hardware capabilities. For example, the HDMI DIP and VGA DIP both output specialized video formats that C.H.I.P. could not do without the additional DIP hardware. 
 DIPs come in all sorts of flavors. &ndash; from officially Next Thing Co. DIPS like the HDMI and VGA accessory boards to community created DIPS that increase the number of USB ports on C.H.I.P. or control motors and LED matrices. [a]While any C.H.I.P.-attached hardware can be casually called a DIP, for an accessory board to be officially be called a DIP, it must adhere to the C.H.I.P. DIP Specification[b]..</p>
 
-          <h1 id="hdmi-dip">HDMI DIP</h1>
+<h1 id="hdmi-dip">HDMI DIP</h1>
 
 <h2 id="intro">Intro</h2>
 
@@ -55,8 +15,8 @@ DIPs come in all sorts of flavors. &ndash; from officially Next Thing Co. DIPS l
 
 <h2 id="parts-and-pieces">Parts and Pieces</h2>
 
-<p><img alt="HDMI top" src="images/images/HDMI_top.png" />
-<img alt="HDMI bottom" src="images/images/HDMI_bottom.png" /></p>
+<p><img alt="HDMI top" src="/images/images/HDMI_top.png" />
+<img alt="HDMI bottom" src="/images/images/HDMI_bottom.png" /></p>
 
 <h3 id="what-s-in-the-bag">What’s in the Bag?</h3>
 
@@ -64,7 +24,7 @@ DIPs come in all sorts of flavors. &ndash; from officially Next Thing Co. DIPS l
 
 <h3 id="pictures">Pictures</h3>
 
-<p><img alt="HDMI DIP Callout Graphic" src="images/images/hdmi_callout.png" />
+<p><img alt="HDMI DIP Callout Graphic" src="/images/images/hdmi_callout.png" />
 Callout graphic of what’s on the board</p>
 
 <h2 id="requirements">Requirements</h2>
@@ -100,7 +60,7 @@ How to disconnect the DIP</p>
 
 <h3 id="can-i-use-the-composite-video-at-the-same-time">Can I use the composite video at the same time?</h3>
 
-          <h1 id="vga-dip">VGA DIP</h1>
+<h1 id="vga-dip">VGA DIP</h1>
 
 <h2 id="intro">Intro</h2>
 
@@ -110,8 +70,8 @@ How to disconnect the DIP</p>
 
 <h2 id="parts-and-pieces">Parts and Pieces</h2>
 
-<p><img alt="VGA top" src="images/images/vga_top.png" />
-<img alt="VGA bottom" src="images/images/vga_bottom.png" /></p>
+<p><img alt="VGA top" src="/images/images/vga_top.png" />
+<img alt="VGA bottom" src="/images/images/vga_bottom.png" /></p>
 
 <h3 id="what-s-in-the-bag">What’s in the Bag</h3>
 
@@ -119,7 +79,7 @@ How to disconnect the DIP</p>
 
 <h3 id="pictures">Pictures</h3>
 
-<p><img alt="VGA DIP Callout Graphic" src="images/images/vga_callout.png" /></p>
+<p><img alt="VGA DIP Callout Graphic" src="/images/images/vga_callout.png" /></p>
 
 <ul>
 <li>RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP</li>
@@ -165,7 +125,12 @@ FAQ
 Can I play HD videos on C.H.I.P.?
 Can I use the composite video at the same time?</p>
 
-          <h1 id="updating-c-h-i-p-to-debian-4-4">Updating C.H.I.P. to Debian 4.4</h1>
+<h1 id="dip-diy">DIP DIY</h1>
+
+<p>Specification https://w.nextthing.co/doku.php?id=dip_specification
+DIP Developer’s Kit https://w.nextthing.co/doku.php?id=dip_developers_kit</p>
+
+<h1 id="updating-c-h-i-p-to-debian-4-4">Updating C.H.I.P. to Debian 4.4</h1>
 
 <p>In addition to being physically attached to C.H.I.P., DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel.
 Determine C.H.I.P.’s Kernel Version
@@ -184,10 +149,3 @@ Look for a number in appended with <code class="prettyprint">-ntc</code>, for ex
 <p>Using the <a href="https://www.google.com/chrome/browser/desktop/">Chrome</a> or <a href="https://www.chromium.org/getting-involved/download-chromium">Chromium</a> web browser, visit <a href="http://flash.getchip.com">flash.getchip.com</a> and follow the on-screen instructions. When the flasher presents you with different OS images to choose from, click on “CHIP OS 1.1” to select it.</p>
 
 <p>When flashing is complete, follow the instructions for using your DIP.</p>
-
-      </div>
-      <div class="dark-box">
-      </div>
-    </div>
-  </body>
-</html>
