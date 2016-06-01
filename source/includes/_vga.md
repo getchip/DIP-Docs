@@ -7,8 +7,7 @@ The VGA DIP enables C.H.I.P. to output a video signal over a standard 9-pin VGA 
 The VGA DIP supports higher resolutions than the on-board composite video output, with a maximum output resolution of TK by TK at TK Hz[e]. Additionally, the VGA DIP outputs resolutions in a 4:3 aspect ratio.
 
 ## Parts and Pieces
-![VGA top](images/vga_top.png)
-![VGA bottom](images/vga_bottom.png)
+![VGA top and bottom](images/vga_top_and_bot.jpg)
 
 ### What’s in the Bag
 
@@ -16,7 +15,7 @@ There is one VGA DIP in the electrostatic bag, packaged with protective foam.
 
 ### Pictures
 
-![VGA DIP Callout Graphic](images/vga_callout.png)
+![VGA DIP Callout Graphic](images/vga_callout.jpg)
 
  * RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP
  * Trim-pot breakouts (RGB) - There are three footprints for trimpots, which can be found [here]. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
@@ -33,7 +32,7 @@ U14 breakouts - The U14 header breakout is directly to the left of U14. This is 
 If you don’t have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
 
 ## Use It
-The VGA DIP is extremely easy to use. It’s really as simple as attaching the DIP to your CHIP, plugging in a VGA monitor, and booting up CHIP. But, for posterity’s sake, here’s all the details. 
+The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in a VGA monitor, and booting up CHIP. But, for posterity’s sake, here’s all the details. 
 
 Update C.H.I.P. OS
 Connect DIP to C.H.I.P.

@@ -11,8 +11,7 @@ The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations,
 
 ## Parts and Pieces
 
-![HDMI top](images/HDMI_top.png)
-![HDMI bottom](images/HDMI_bottom.png)
+![HMDI top and bottom](images/hdmi_top_and_bot.jpg)
 
 ### What’s in the Bag?
 
@@ -32,10 +31,13 @@ Callout graphic of what’s on the board
 If you don’t have Debian 4.4, or if you are unsure, [follow this guide](#link to guide).
 
 ## Use It
+![Plug it!](images/hdmi_plugged_in_half.jpg)
+The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
 
-Connect DIP to C.H.I.P.
-Connect cable to DIP and monitor
-Power up C.H.I.P.
+ * Connect DIP to C.H.I.P.
+ * Connect cable to DIP and monitor
+ * Power up C.H.I.P.
+
 Change resolutions with Computer Things/Settings/Display control panel
 Change resolutions with xrandr in command line
 Supported Resolutions
