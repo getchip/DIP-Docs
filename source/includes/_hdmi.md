@@ -26,11 +26,11 @@ There is one HDMI DIP in the electrostatic bag, packaged with protective foam.'H
 
 ## Requirements
 
- * C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel
+ * C.H.I.P. with C.H.I.P. OS 1.1
  * HDMI display
  * HDMI cable
 
-If you don't have Debian 4.4, or if you are unsure, [follow this guide](#update_to_debian44).
+If you not sure of your OS, [follow this guide](#update_to_debian44).
 
 ## Use It
 
