@@ -57,7 +57,22 @@ If you like using commandline in the terminal, you can change resolutions with `
 xrandr -s 1024x768
 ```
 
+## Know It
+
 ### Supported Resolutions
+We cannot provide an exhaustive list of all resolutions, since this can depend on the attached monitor, but here are some observed resolutions:
+
+  * 1600x900
+  * 1280x1024
+  * 1152x864
+  * 1024x768
+  * 800x600
+  * 640x480
+  * 720x400
+
+
+### How to disconnect the DIP
+With great care! It's important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We've found that the [IC Extractor](https://en.wikipedia.org/wiki/IC_extractor) is an excellent companion if you want to frequently remove DIPs.
 
 ## Hack It
 Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here's a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image.

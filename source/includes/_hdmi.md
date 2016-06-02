@@ -64,10 +64,28 @@ If you like using commandline in the terminal, you can change resolutions with `
 ```shell
 xrandr -s 1280x720
 ```
+## Know it
 
-Supported Resolutions
+### Supported Resolutions
+We cannot provide an exhaustive list of all resolutions, since this can depend on the attached monitor, but here are some observed resolutions:
+
+  * 1360x768
+  * 1920x1080
+  * 1680x1050
+  * 1280x1024
+  * 1280x960
+  * 1280x800
+  * 1280x720
+  * 1024x768
+  * 800x600
+  * 720x480
+  * 640x480
+  * 720x400
+
+
 HDMI DIP only does video - it does not carry an audio signal.
-How to disconnect the DIP
+
+### How to disconnect the DIP
 
 ## Open Source
 HDMI DIP is open source. Design files are at github.com/etcetera
