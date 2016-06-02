@@ -1,10 +1,8 @@
-﻿# VGA DIP
+# VGA DIP
 
 ## Intro
 
-The VGA DIP enables C.H.I.P. to output a video signal over a standard 9-pin VGA cable. To connect the DIP to C.H.I.P., first orient C.H.I.P. so that the USB connector is facing away from. Then place the DIP atop C.H.I.P. with the VGA connector facing you and gently press the two boards together.  
-
-The VGA DIP supports higher resolutions than the on-board composite video output, with a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP outputs in a 4:3 aspect ratio.
+The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 9-pin VGA cable at a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP outputs in a 4:3 aspect ratio.
 
 ## Parts and Pieces
 
@@ -13,6 +11,7 @@ The VGA DIP supports higher resolutions than the on-board composite video output
 ### What’s in the Bag
 
 There is one VGA DIP in the electrostatic bag, packaged with protective foam.
+VGA cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
 
 ### Pictures
 

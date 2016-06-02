@@ -1,4 +1,16 @@
-﻿# What’s a DIP?
+# What’s a DIP?
 
-DIPs are accessory boards that attach directly to C.H.I.P. and add extra hardware capabilities. For example, the HDMI DIP and VGA DIP both output specialized video formats that C.H.I.P. could not do without the additional DIP hardware. 
-DIPs come in all sorts of flavors. -- from officially Next Thing Co. DIPS like the HDMI and VGA accessory boards to community created DIPS that increase the number of USB ports on C.H.I.P. or control motors and LED matrices. [a]While any C.H.I.P.-attached hardware can be casually called a DIP, for an accessory board to be officially be called a DIP, it must adhere to the C.H.I.P. DIP Specification.
+DIPs are accessory boards that give new capabilities to C.H.I.P.  DIPs come in many flavors, like official Next Thing Co. HDMI and VGA DIPs that give C.H.I.P. higher resolution video output to community DIPs that add more USB ports, control motors, or blink LEDs.  C.H.I.P.s (with the proper software) automatically recognize when a DIP is attached and act accordingly.  
+
+Here you’ll find specs and instructions for the official Next Thing Co. HDMI and VGA DIPs as well as tips and tricks to get you started making your own.
+
+## Requirements
+
+To properly recognize official NTC DIPs, C.H.I.P.s will need to updated to at least Debian 4.4.  For a quick start on how to update your C.H.I.P., head to getchip.com/update.  Full documentation exists in the ‘Update C.H.I.P. to Debian 4.4’ at the bottom of the page.
+
+## Attaching DIPs
+
+[image] 
+
+pins match exactly.  outputs will be opposite of the USB ports.
+

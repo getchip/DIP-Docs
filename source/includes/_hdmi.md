@@ -1,11 +1,9 @@
-﻿
+
 # HDMI DIP
 
 ## Intro
 
-The HDMI DIP provides the extra hardware necessary for C.H.I.P. to output video using HDMI. To connect the DIP to C.H.I.P., first orient C.H.I.P. so that the USB connector is facing away from. Then place the DIP atop C.H.I.P. with the HDMI connector facing you and gently press the two boards together.
-
-Using the HDMI DIP, C.H.I.P. can output a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p)
+The HDMI DIP allows C.H.I.P. to connect to a monitor or television via an HDMI cable at a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p)
 
 The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations, classrooms, and games, and makes amazing things like [large-scale installations](http://blog.nextthing.co/this-is-how-we-made-the-75-tall-mega-pocketc-h-i-p/), magic mirrors, and [urban projection](http://c-uir.org/mup/). 
 
@@ -16,6 +14,7 @@ The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations,
 ### What’s in the Bag?
 
 There is one HDMI DIP in the electrostatic bag, packaged with protective foam.
+HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
 
 ### Pictures
 
