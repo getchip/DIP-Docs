@@ -21,12 +21,12 @@ There is one HDMI DIP in the electrostatic bag, packaged with protective foam.
 
 ![HDMI DIP Callout Graphic](images/hdmi_callout.jpg)
 
-Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. 
-Proto area is available to add a small circuit in the “NTC” text.
-U14 partial breakout makes it easy to access the GPIO, UART, and audio pins. Ground pins are also available on this breakout.
-5V &3V3 voltages are available below the NTC proto area. 
-The HDMI connector is located at the bottom of the PCB.  
-The Video Processor is the brains of the HDMI_DIP. It takes the video from the LCD_Dx pins.
+  * Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. 
+  * Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.
+  * U14 partial breakout - This makes it easy to access the GPIO, UART, audio, and ground pins.
+  * Volts - 5V & 3V voltages are available below the NTC proto area. 
+  * HDMI connector - A standard HDMI connector is used to send your video to a monitor, and is located at the bottom of the PCB.  
+  * The Video Processor is the brains of the HDMI DIP. It takes the video from the LCD_Dx pins.
 
 ## Requirements
 

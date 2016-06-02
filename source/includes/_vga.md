@@ -18,11 +18,11 @@ There is one VGA DIP in the electrostatic bag, packaged with protective foam.
 ![VGA DIP Callout Graphic](images/vga_callout.jpg)
 
  * RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP
- * Trim-pot breakouts (RGB) - There are three footprints for trimpots, which can be found [here]. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
-U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.
+ * Trim-pot breakouts (RGB) - There are three footprints for1 0K trimpots. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
+ * U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.
  * JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO C.H.I.P. THIS WILL DAMAGE YOUR C.H.I.P. 
  * Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.
- * VGA connector - The VGA connector. This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. 
+ * VGA connector - This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. 
  * Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. 
 
 ## Requirements
@@ -57,12 +57,18 @@ If you like using commandline in the terminal, you can change resolutions with `
 xrandr -s 1024x768
 ```
 
-Supported Resolutions
+### Supported Resolutions
 
 ## Hack It
-Heat up your soldering iron, the VGA DIP is hackable. Add pots to adjust RGB
-trim pots vs. regular pots
-Use C.H.I.P GPIO to turn RGB channels on/off
+Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here's a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image.
+
+![Through hole application](images/vgapot_01thruhole.jpg)
+
+![Place the pots](images/vgapot_02place.jpg)
+
+![Solder the pots to the VGA board](images/vgapot_03soldered.jpg)
+
+![Control and compose](images/vgapot_04allpots.jpg)
 
 ## Open Source
 VGA DIP is open source. Design files are at https://github.com/NextThingCo/VGA_DIP
