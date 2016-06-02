@@ -10,6 +10,7 @@ includes:
   - _whatsadip.md
   - _hdmi.md
   - _vga.md
+  - _updatechipos.md
 
 search: true
 ---
