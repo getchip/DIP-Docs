@@ -63,8 +63,16 @@ DIPs come in all sorts of flavors. &ndash; from officially Next Thing Co. DIPS l
 
 <h3 id="pictures">Pictures</h3>
 
-<p><img alt="HDMI DIP Callout Graphic" src="images/images/hdmi_callout.png" />
-Callout graphic of what’s on the board</p>
+<p><img alt="HDMI DIP Callout Graphic" src="images/images/hdmi_callout.jpg" /></p>
+
+<ul>
+<li>Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. </li>
+<li>Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.</li>
+<li>U14 partial breakout - This makes it easy to access the GPIO, UART, audio, and ground pins.</li>
+<li>Volts - 5V &amp; 3V voltages are available below the NTC proto area. </li>
+<li>HDMI connector - A standard HDMI connector is used to send your video to a monitor, and is located at the bottom of the PCB.<br></li>
+<li>The Video Processor is the brains of the HDMI DIP. It takes the video from the LCD_Dx pins.</li>
+</ul>
 
 <h2 id="requirements">Requirements</h2>
 
@@ -74,12 +82,13 @@ Callout graphic of what’s on the board</p>
 <li>HDMI cable</li>
 </ul>
 
-<p>If you don’t have Debian 4.4, or if you are unsure, <a href="#link to guide">follow this guide</a>.</p>
+<p>If you don’t have Debian 4.4, or if you are unsure, <a href="#update_to_debian44">follow this guide</a>.</p>
 
 <h2 id="use-it">Use It</h2>
 
-<p><img alt="Plug it!" src="images/hdmi_plugged_in_half.jpg" />
-The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. </p>
+<p><img alt="Plug it!" src="images/hdmi_plugged_in_half.jpg" /></p>
+
+<p>The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. </p>
 
 <ul>
 <li>Connect DIP to C.H.I.P.</li>
@@ -87,9 +96,23 @@ The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, i
 <li>Power up C.H.I.P.</li>
 </ul>
 
-<p>Change resolutions with Computer Things/Settings/Display control panel
-Change resolutions with xrandr in command line
-Supported Resolutions
+<p>Once C.H.I.P has power, you&rsquo;ll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display </p>
+
+<p><img alt="display control panel" src="images/settings_select.jpg" /></p>
+
+<p>In the Display control panel, you can select a resolution in the Outputs menu:</p>
+
+<p><img alt="Change Resolutions" src="images/settings_hdmi_resolution.jpg" /></p>
+
+<p>After you select a resolution, you&rsquo;ll need to &ldquo;Apply&rdquo; it:</p>
+
+<p><img alt="apply the new resolution" src="images/settings_apply.jpg" /></p>
+
+<p>If you like using commandline in the terminal, you can change resolutions with <code class="prettyprint">xrandr</code>, such as</p>
+<pre class="highlight shell"><code>xrandr -s 1280x720
+</code></pre>
+
+<p>Supported Resolutions
 HDMI DIP only does video - it does not carry an audio signal.
 How to disconnect the DIP</p>
 
@@ -123,16 +146,16 @@ How to disconnect the DIP</p>
 
 <h3 id="pictures">Pictures</h3>
 
-<p><img alt="VGA DIP Callout Graphic" src="images/images/vga_callout.jpg" /></p>
+<p><img alt="VGA DIP Callout Graphic" src="images/vga_callout.jpg" /></p>
 
 <ul>
 <li>RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP</li>
-<li>Trim-pot breakouts (RGB) - There are three footprints for trimpots, which can be found [here]. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
-U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.</li>
-<li>JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO CHIP. THIS WILL DAMAGE YOUR CHIP. </li>
+<li>Trim-pot breakouts (RGB) - There are three footprints for1 0K trimpots. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.</li>
+<li>U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.</li>
+<li>JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO C.H.I.P. THIS WILL DAMAGE YOUR C.H.I.P. </li>
 <li>Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.</li>
-<li>VGA connector - The VGA connector. This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. </li>
-<li>Power on switch - A Power On Switch has been added to the VGA DIP as well. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. </li>
+<li>VGA connector - This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. </li>
+<li>Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. </li>
 </ul>
 
 <h2 id="requirements">Requirements</h2>
@@ -146,21 +169,44 @@ If you don’t have Debian 4.4, or if you are unsure, <a href="getchip.com/updat
 
 <h2 id="use-it">Use It</h2>
 
-<p>The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in a VGA monitor, and booting up CHIP. But, for posterity’s sake, here’s all the details. </p>
+<p>The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. </p>
 
-<p>Update C.H.I.P. OS
-Connect DIP to C.H.I.P.
-Connect cable to DIP and monitor
-Power up C.H.I.P.
-Change resolutions with Computer Things/Settings/Display control panel
-Change resolutions with xrandr in command line
-Supported Resolutions</p>
+<ul>
+<li>Update C.H.I.P. OS</li>
+<li>Connect DIP to C.H.I.P.</li>
+<li>Connect cable to DIP and monitor</li>
+<li>Power up C.H.I.P.</li>
+</ul>
+
+<p>Once C.H.I.P has power, you&rsquo;ll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display </p>
+
+<p><img alt="display control panel" src="images/settings_select.jpg" /></p>
+
+<p>In the Display control panel, you can select a resolution in the Outputs menu:</p>
+
+<p><img alt="Change Resolutions" src="images/images/settings_vga_resolution.jpg" /></p>
+
+<p>After you select a resolution, you&rsquo;ll need to &ldquo;Apply&rdquo; it:</p>
+
+<p><img alt="apply the new resolution" src="images/settings_apply.jpg" /></p>
+
+<p>If you like using commandline in the terminal, you can change resolutions with <code class="prettyprint">xrandr</code>, such as</p>
+<pre class="highlight shell"><code>xrandr -s 1024x768
+</code></pre>
+
+<h3 id="supported-resolutions">Supported Resolutions</h3>
 
 <h2 id="hack-it">Hack It</h2>
 
-<p>Heat up your soldering iron, the VGA DIP is hackable. Add pots to adjust RGB
-trim pots vs. regular pots
-Use CHIP GPIO to turn RGB channels on/off</p>
+<p>Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here&rsquo;s a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image.</p>
+
+<p><img alt="Through hole application" src="images/vgapot_01thruhole.jpg" /></p>
+
+<p><img alt="Place the pots" src="images/vgapot_02place.jpg" /></p>
+
+<p><img alt="Solder the pots to the VGA board" src="images/vgapot_03soldered.jpg" /></p>
+
+<p><img alt="Control and compose" src="images/vgapot_04allpots.jpg" /></p>
 
 <h2 id="open-source">Open Source</h2>
 
@@ -169,19 +215,30 @@ FAQ
 Can I play HD videos on C.H.I.P.?
 Can I use the composite video at the same time?</p>
 
-          <h1 id="updating-c-h-i-p-to-debian-4-4">Updating C.H.I.P. to Debian 4.4</h1>
+          <h1 id="update-c-h-i-p-to-debian-4-4">Update C.H.I.P to Debian 4.4</h1>
 
-<p>In addition to being physically attached to C.H.I.P., DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel.
-Determine C.H.I.P.’s Kernel Version
-To determine if you need to upgrade your C.H.I.P.’s kernel, connect a keyboard, mouse, and display to C.H.I.P., then power on the board. 
-Once open the terminal application from the drop-down menu at the top, left corner of the Desktop.</p>
+<p>DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel. Here&rsquo;s a detailed guide to determining if you need to update and how to update using our web flasher.</p>
 
-<p>Once the applications loads, type <code class="prettyprint">uname -a</code>. This outputs information about your system software version. 
-Look for a number in appended with <code class="prettyprint">-ntc</code>, for example <code class="prettyprint">4.3.0-ntc</code> or <code class="prettyprint">4.4.0-ntc</code>. This number is the kernel version running on your C.H.I.P. If the number is <code class="prettyprint">4.4.0</code> or greater, you don’t need to upgrade your kernel version. If your number is <code class="prettyprint">4.3.0</code>, keep reading, you need to upgrade your kernel.</p>
+<h2 id="determine-c-h-i-p-s-kernel-version">Determine C.H.I.P.’s Kernel Version</h2>
+
+<p>To determine if you need to upgrade your C.H.I.P.’s kernel, connect a keyboard, mouse, and display to C.H.I.P., then power up CHIP.
+Then, open the Terminal application (from the drop-down menu at the top, left corner of the Desktop.</p>
+
+<p>Once the applications loads, type <code class="prettyprint">uname -a</code>. This outputs information about your system software version.</p>
+
+<p><img alt="uname results in terminal" src="images/update_uname.jpg" /></p>
+
+<p>Look for a number in appended with <code class="prettyprint">-ntc</code>, for example <code class="prettyprint">4.3.0-ntc</code> or <code class="prettyprint">4.4.0-ntc</code>. This number is the kernel version running on your C.H.I.P. If the number is <code class="prettyprint">4.4.0</code> or greater, you don’t need to upgrade your kernel version. Most likely, your number is <code class="prettyprint">4.3.0</code>, keep reading, you need to upgrade your kernel.</p>
 
 <h2 id="back-up-c-h-i-p-s-data">Back-up C.H.I.P.’s Data</h2>
 
-<p>Back-up any important data on your C.H.I.P. before you upgrade your system. Upgrading will overwrite all of the C.H.I.P. storage.</p>
+<p>Backup any important data on your C.H.I.P. before you upgrade your system. Upgrading will overwrite all of the C.H.I.P. storage. You can backup your user directory with a simple command in the Terminal emulator:</p>
+<pre class="highlight shell"><code>tar cfpz homebackup.tar.gz /home/chip
+</code></pre>
+
+<p>You can transfer that <code class="prettyprint">tar</code> file to another computer or cloud service from C.H.I.P. There&rsquo;s more to learn in <a href="https://mylinuxramblings.wordpress.com/2010/01/10/how-to-backup-and-restore-your-home-directory/">this detailed guide</a>.</p>
+
+<p>If you have installed a lot of packages with Synaptic or <code class="prettyprint">apt</code>, and would like to be able to be able to easily re-install those packages, there&rsquo;s some good <a href="http://www.debianadmin.com/clone-your-ubuntu-installation.html">guides</a> and <a href="http://serverfault.com/questions/175504/how-do-i-get-the-history-of-apt-get-install-on-ubuntu">suggestions</a> on the web.</p>
 
 <h2 id="upgrade-the-kernel-with-the-c-h-i-p-flasher">Upgrade the Kernel with the C.H.I.P. Flasher</h2>
 
