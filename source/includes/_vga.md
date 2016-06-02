@@ -2,7 +2,7 @@
 
 ## Intro
 
-The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 9-pin VGA cable at a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP usually outputs in a 4:3 aspect ratio.
+The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 15-pin VGA cable at a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP usually outputs in a 4:3 aspect ratio.
 
 ## Parts and Pieces
 
@@ -26,7 +26,7 @@ There is one VGA DIP in the electrostatic bag, packaged with protective foam. VG
 
  * C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel
  * VGA display
- * VGA cable (we recommend a cable with Ferrite beads)
+ * 15-pin VGA cable (we recommend a cable with [Ferrite beads](https://en.wikipedia.org/wiki/Ferrite_bead))
 
 If you don't have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
 
