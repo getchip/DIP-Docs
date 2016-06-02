@@ -1,7 +1,7 @@
-﻿# Updating C.H.I.P. to Debian 4.4
-DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel. Here's a detailed guide to determining if you need to update and how to update using our web flasher
+﻿# Update C.H.I.P to Debian 4.4
+DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel. Here's a detailed guide to determining if you need to update and how to update using our web flasher.
 
-Determine C.H.I.P.’s Kernel Version
+## Determine C.H.I.P.’s Kernel Version
 To determine if you need to upgrade your C.H.I.P.’s kernel, connect a keyboard, mouse, and display to C.H.I.P., then power up CHIP.
 Then, open the Terminal application (from the drop-down menu at the top, left corner of the Desktop.
 

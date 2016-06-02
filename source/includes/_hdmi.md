@@ -21,7 +21,12 @@ There is one HDMI DIP in the electrostatic bag, packaged with protective foam.
 
 ![HDMI DIP Callout Graphic](images/hdmi_callout.jpg)
 
-Callout graphic of what’s on the board
+Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. 
+Proto area is available to add a small circuit in the “NTC” text.
+U14 partial breakout makes it easy to access the GPIO, UART, and audio pins. Ground pins are also available on this breakout.
+5V &3V3 voltages are available below the NTC proto area. 
+The HDMI connector is located at the bottom of the PCB.  
+The Video Processor is the brains of the HDMI_DIP. It takes the video from the LCD_Dx pins.
 
 ## Requirements
 
@@ -29,20 +34,20 @@ Callout graphic of what’s on the board
  * HDMI display
  * HDMI cable
 
-If you don’t have Debian 4.4, or if you are unsure, [follow this guide](#link to guide).
+If you don’t have Debian 4.4, or if you are unsure, [follow this guide](#update_to_debian44).
 
 ## Use It
 
 ![Plug it!](images/hdmi_plugged_in_half.jpg)
 
-The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
+The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
 
  * Connect DIP to C.H.I.P.
  * Connect cable to DIP and monitor
  * Power up C.H.I.P.
 
 
-Once CHIP has power, you'll start seeing output on your monitor. Once CHIP is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
+Once C.H.I.P has power, you'll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
 
 ![display control panel](images/settings_select.jpg)
 
@@ -57,7 +62,7 @@ After you select a resolution, you'll need to "Apply" it:
 If you like using commandline in the terminal, you can change resolutions with `xrandr`, such as
 
 ```shell
-xrandr 1024x768
+xrandr -s 1280x720
 ```
 
 Supported Resolutions

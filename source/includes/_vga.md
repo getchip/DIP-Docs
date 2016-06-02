@@ -20,10 +20,10 @@ There is one VGA DIP in the electrostatic bag, packaged with protective foam.
  * RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP
  * Trim-pot breakouts (RGB) - There are three footprints for trimpots, which can be found [here]. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
 U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.
- * JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO CHIP. THIS WILL DAMAGE YOUR CHIP. 
+ * JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO C.H.I.P. THIS WILL DAMAGE YOUR C.H.I.P. 
  * Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.
  * VGA connector - The VGA connector. This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. 
- * Power on switch - A Power On Switch has been added to the VGA DIP as well. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. 
+ * Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. 
 
 ## Requirements
  * C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel
@@ -32,14 +32,14 @@ U14 breakouts - The U14 header breakout is directly to the left of U14. This is 
 If you don’t have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
 
 ## Use It
-The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in a VGA monitor, and booting up CHIP. But, for posterity’s sake, here’s all the details. 
+The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
 
  * Update C.H.I.P. OS
  * Connect DIP to C.H.I.P.
  * Connect cable to DIP and monitor
  * Power up C.H.I.P.
 
-Once CHIP has power, you'll start seeing output on your monitor. Once CHIP is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
+Once C.H.I.P has power, you'll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
 
 ![display control panel](images/settings_select.jpg)
 
@@ -54,7 +54,7 @@ After you select a resolution, you'll need to "Apply" it:
 If you like using commandline in the terminal, you can change resolutions with `xrandr`, such as
 
 ```shell
-xrandr 1024x768
+xrandr -s 1024x768
 ```
 
 Supported Resolutions
@@ -62,7 +62,7 @@ Supported Resolutions
 ## Hack It
 Heat up your soldering iron, the VGA DIP is hackable. Add pots to adjust RGB
 trim pots vs. regular pots
-Use CHIP GPIO to turn RGB channels on/off
+Use C.H.I.P GPIO to turn RGB channels on/off
 
 ## Open Source
 VGA DIP is open source. Design files are at https://github.com/NextThingCo/VGA_DIP
