@@ -9,7 +9,7 @@ Once the applications loads, type `uname -a`. This outputs information about you
 
 ![uname results in terminal](images/update_uname.jpg)
 
-Look for a number in appended with `-ntc`, for example `4.3.0-ntc` or `4.4.0-ntc`. This number is the kernel version running on your C.H.I.P. If the number is `4.4.0` or greater, you don’t need to upgrade your kernel version. Most likely, your number is `4.3.0`, keep reading, you need to upgrade your kernel.
+Look for a number in appended with `-ntc`, for example `4.3.0` or `4.4.0`. This number is the kernel version running on your C.H.I.P. If the number is `4.4.0` or greater, you don’t need to upgrade your kernel version. Most likely, your number is `4.3.0`, keep reading: you need to upgrade your kernel.
 
 ## Back-up C.H.I.P.’s Data
 Backup any important data on your C.H.I.P. before you upgrade your system. Upgrading will overwrite all of the C.H.I.P. storage. You can backup your user directory with a simple command in the Terminal emulator:
