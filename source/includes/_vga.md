@@ -6,35 +6,32 @@ The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 9-pin VGA cab
 
 ## Parts and Pieces
 
-![VGA top and bottom](images/vga_top_and_bot.jpg)
+### What's in the Bag
 
-### What’s in the Bag
-
-There is one VGA DIP in the electrostatic bag, packaged with protective foam.
-VGA cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
+There is one VGA DIP in the electrostatic bag, packaged with protective foam. VGA cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
 
 ### Pictures
 
 ![VGA DIP Callout Graphic](images/vga_callout.jpg)
 
- * RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP
+ * RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to "bend" your VGA DIP
  * Trim-pot breakouts (RGB) - There are three footprints for1 0K trimpots. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.
  * U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.
  * JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO C.H.I.P. THIS WILL DAMAGE YOUR C.H.I.P. 
- * Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.
+ * Prototyping area - There is "Proto board" on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.
  * VGA connector - This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. 
- * Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. 
+ * Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a "Power On" symbol. 
 
 ## Requirements
 
  * C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel
  * VGA display
  * VGA cable (we recommend a cable with Ferrite beads)
-If you don’t have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
+If you don't have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
 
 ## Use It
 
-The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
+The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it's really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity's sake, here's all the details. 
 
  * Update C.H.I.P. OS
  * Connect DIP to C.H.I.P.
@@ -73,29 +70,30 @@ We cannot provide an exhaustive list of all resolutions, since this can depend o
   * 640x480
   * 720x400
 
-
-### How to disconnect the DIP
-
-With great care! It's important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We've found that the [IC Extractor](https://en.wikipedia.org/wiki/IC_extractor) is an excellent companion if you want to frequently remove DIPs.
-
 ## Hack It
 
-Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here's a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image.
+Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here's a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image. You can find [these pots](http://www.bourns.com/docs/Product-Datasheets/3386.pdf) at vendors such as [digikey](http://www.digikey.com/product-detail/en/bourns-inc/3386P-1-103TLF/3386P-103TLF-ND/1232547) and [mouser](http://www.mouser.com/ProductDetail/Bourns/3386P-1-103TLF/?qs=sGAEpiMZZMvygUB3GLcD7rufck0TIBKysL9OZJpl%2f%2fo%3d)
 
-![Through hole application](images/vgapot_01thruhole.jpg)
+Trim pots are able to go in one way on TOP of the PCB for accessibility.
 
-![Place the pots](images/vgapot_02place.jpg)
+![able to go in one way](images/vgapot_01place.jpg)
 
-![Solder the pots to the VGA board](images/vgapot_03soldered.jpg)
+Trim pots are sized and spaced for a precise alignment.
 
-![Control and compose](images/vgapot_04allpots.jpg)
+![sized and spaced for a precise alignment](images/vgapot_02allpots.jpg)
+
+Here we see that there is only one way for the pots to go on the TOP side.
+
+![only one way for the pots to go](images/vgapot_03thruhole.jpg)
+
+Solder the leads and trim them like so.
+
+![Solder the leads and trim them like so.](images/vgapot_04soldered.jpg)
+
+Time to start Bending Colors!!!
+
+![Control and Compose](images/vgapot_02allpots.jpg)
 
 ## Open Source
 
 VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/VGA_DIP)
-
-## FAQ
-
-Can I play HD videos on C.H.I.P.?
-Can I use the composite video at the same time?
-

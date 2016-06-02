@@ -3,25 +3,22 @@
 
 ## Intro
 
-The HDMI DIP allows C.H.I.P. to connect to a monitor or television via an HDMI cable at a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p)
+The HDMI DIP allows C.H.I.P. to connect to a monitor or television via an HDMI cable at a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p). This DIP only provides a video signal over the HDMI cable: there is no audio encoded with it.
 
 The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations, classrooms, and games, and makes amazing things like [large-scale installations](http://blog.nextthing.co/this-is-how-we-made-the-75-tall-mega-pocketc-h-i-p/), magic mirrors, and [urban projection](http://c-uir.org/mup/). 
 
 ## Parts and Pieces
 
-![HMDI top and bottom](images/hdmi_top_and_bot.jpg)
+### What's in the Bag?
 
-### What’s in the Bag?
-
-There is one HDMI DIP in the electrostatic bag, packaged with protective foam.
-HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
+There is one HDMI DIP in the electrostatic bag, packaged with protective foam.'HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
 
 ### Pictures
 
 ![HDMI DIP Callout Graphic](images/hdmi_callout.jpg)
 
   * Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. 
-  * Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.
+  * Prototyping area - There is "Proto board" on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.
   * U14 partial breakout - This makes it easy to access the GPIO, UART, audio, and ground pins.
   * Volts - 5V & 3V voltages are available below the NTC proto area. 
   * HDMI connector - A standard HDMI connector is used to send your video to a monitor, and is located at the bottom of the PCB.  
@@ -33,18 +30,17 @@ HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.c
  * HDMI display
  * HDMI cable
 
-If you don’t have Debian 4.4, or if you are unsure, [follow this guide](#update_to_debian44).
+If you don't have Debian 4.4, or if you are unsure, [follow this guide](#update_to_debian44).
 
 ## Use It
 
 ![Plug it!](images/hdmi_plugged_in_half.jpg)
 
-The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. 
+The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it•s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity•s sake, here•s all the details. 
 
  * Connect DIP to C.H.I.P.
  * Connect cable to DIP and monitor
  * Power up C.H.I.P.
-
 
 Once C.H.I.P has power, you'll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
 
@@ -93,9 +89,3 @@ With great care! It's important to pull with an even force to separate the DIP f
 ## Open Source
 
 VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/HDMI_DIP)
-
-## FAQ
-
-### Can I play HD videos on C.H.I.P.?
-### How can I hear audio when I’m using HDMI?
-### Can I use the composite video at the same time?
