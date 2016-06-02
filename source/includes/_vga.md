@@ -96,4 +96,4 @@ Time to start Bending Colors!!!
 
 ## Open Source
 
-VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/VGA_DIP)
+VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/DIP-VGA-PCB)

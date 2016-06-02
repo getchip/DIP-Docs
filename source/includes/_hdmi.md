@@ -88,4 +88,4 @@ With great care! It's important to pull with an even force to separate the DIP f
 
 ## Open Source
 
-VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/HDMI_DIP)
+VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/DIP-HDMI-PCB)
