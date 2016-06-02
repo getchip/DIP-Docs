@@ -2,7 +2,7 @@
 
 ## Intro
 
-The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 9-pin VGA cable at a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP outputs in a 4:3 aspect ratio.
+The VGA DIP allows C.H.I.P. to connect to a monitor via a standard 9-pin VGA cable at a maximum output resolution of 1600 by 900 at 60 Hz. Unlike the 16:9 ratio of HDMI, the VGA DIP usually outputs in a 4:3 aspect ratio.
 
 ## Parts and Pieces
 
