@@ -5,7 +5,7 @@ DIPs are accessory boards that give new capabilities to C.H.I.P.  DIPs come in m
 Here you'll find specs and instructions for the official Next Thing Co. HDMI and VGA DIPs as well as tips and tricks to get you started making your own.
 
 ## Requirements
-To properly recognize official NTC DIPs, C.H.I.P.s will need to update to at least Debian 4.4.  For a quick start on how to update your C.H.I.P., head to [getchip.com/update](http://getchip.com/update).  Full documentation exists in the Update C.H.I.P. to Debian 4.4 section at the [bottom of the page.](#update-c-h-i-p-to-debian-4-4)
+To properly recognize official NTC DIPs, C.H.I.P.s will need to update the OS.
 
 ## Attaching DIPs
 
