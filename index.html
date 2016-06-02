@@ -38,46 +38,47 @@
       <div class="dark-box"></div>
       <div class="content">
         
-          <h1 id="what-s-a-dip">What’s a DIP?</h1>
+          <h1 id="what-39-s-a-dip">What&rsquo;s a DIP?</h1>
 
-<p>DIPs are accessory boards that give new capabilities to C.H.I.P.  DIPs come in many flavors, like official Next Thing Co. HDMI and VGA DIPs that give C.H.I.P. higher resolution video output to community DIPs that add more USB ports, control motors, or blink LEDs.  C.H.I.P.s (with the proper software) automatically recognize when a DIP is attached and act accordingly.  </p>
+<p>DIPs are accessory boards that give new capabilities to C.H.I.P.  DIPs come in many flavors, like official Next Thing Co. HDMI and VGA DIPs that give C.H.I.P. higher resolution video output to community DIPs that add more USB ports, control motors, or blink LEDs.  C.H.I.P.s (with the proper software) automatically recognize when a DIP is attached and act accordingly.</p>
 
-<p>Here you’ll find specs and instructions for the official Next Thing Co. HDMI and VGA DIPs as well as tips and tricks to get you started making your own.</p>
+<p>Here you&rsquo;ll find specs and instructions for the official Next Thing Co. HDMI and VGA DIPs as well as tips and tricks to get you started making your own.</p>
 
 <h2 id="requirements">Requirements</h2>
 
-<p>To properly recognize official NTC DIPs, C.H.I.P.s will need to updated to at least Debian 4.4.  For a quick start on how to update your C.H.I.P., head to getchip.com/update.  Full documentation exists in the ‘Update C.H.I.P. to Debian 4.4’ at the bottom of the page.</p>
+<p>To properly recognize official NTC DIPs, C.H.I.P.s will need to update to at least Debian 4.4.  For a quick start on how to update your C.H.I.P., head to <a href="http://getchip.com/update">getchip.com/update</a>.  Full documentation exists in the Update C.H.I.P. to Debian 4.4 section at the <a href="#update-c-h-i-p-to-debian-4-4">bottom of the page.</a></p>
 
 <h2 id="attaching-dips">Attaching DIPs</h2>
 
-<p>[image] </p>
+<p><img alt="Attach the DIP" src="images/images/attach.jpg" /></p>
 
-<p>pins match exactly.  outputs will be opposite of the USB ports.</p>
+<p>To connect a DIP to C.H.I.P., orient the USB connector opposite the video connector. Align the pins to C.H.I.P.&rsquo;s headers and gently press with even force until the two pieces are joined.</p>
+
+<h2 id="disconnect-the-dip">Disconnect the DIP</h2>
+
+<p>With great care! It&rsquo;s important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We&rsquo;ve found that the <a href="https://en.wikipedia.org/wiki/IC_extractor">IC Extractor</a> is an excellent companion if you want to frequently remove DIPs.</p>
 
           <h1 id="hdmi-dip">HDMI DIP</h1>
 
 <h2 id="intro">Intro</h2>
 
-<p>The HDMI DIP allows C.H.I.P. to connect to a monitor or television via an HDMI cable at a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p)</p>
+<p>The HDMI DIP allows C.H.I.P. to connect to a monitor or television via an HDMI cable at a maximum resolution of 1920 by 1080 at 30Hz (a.k.a, 1080p). This DIP only provides a video signal over the HDMI cable: there is no audio encoded with it.</p>
 
 <p>The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations, classrooms, and games, and makes amazing things like <a href="http://blog.nextthing.co/this-is-how-we-made-the-75-tall-mega-pocketc-h-i-p/">large-scale installations</a>, magic mirrors, and <a href="http://c-uir.org/mup/">urban projection</a>. </p>
 
 <h2 id="parts-and-pieces">Parts and Pieces</h2>
 
-<p><img alt="HMDI top and bottom" src="images/hdmi_top_and_bot.jpg" /></p>
+<h3 id="what-39-s-in-the-bag">What&rsquo;s in the Bag?</h3>
 
-<h3 id="what-s-in-the-bag">What’s in the Bag?</h3>
-
-<p>There is one HDMI DIP in the electrostatic bag, packaged with protective foam.
-HDMI cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages/store">at getchip.com</a></p>
+<p>There is one HDMI DIP in the electrostatic bag, packaged with protective foam.&lsquo;HDMI cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages/store">at getchip.com</a></p>
 
 <h3 id="pictures">Pictures</h3>
 
-<p><img alt="HDMI DIP Callout Graphic" src="images/images/hdmi_callout.jpg" /></p>
+<p><img alt="HDMI DIP Callout Graphic" src="images/hdmi_callout.jpg" /></p>
 
 <ul>
 <li>Power switch: We added this is located on the top edge of the PCB, as it is close to impossible to access it. </li>
-<li>Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.</li>
+<li>Prototyping area - There is &ldquo;Proto board&rdquo; on the PCB itself. This is convenient if you would like to add a small circuit to your DIP, without having to add another board.</li>
 <li>U14 partial breakout - This makes it easy to access the GPIO, UART, audio, and ground pins.</li>
 <li>Volts - 5V &amp; 3V voltages are available below the NTC proto area. </li>
 <li>HDMI connector - A standard HDMI connector is used to send your video to a monitor, and is located at the bottom of the PCB.<br></li>
@@ -92,13 +93,13 @@ HDMI cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages
 <li>HDMI cable</li>
 </ul>
 
-<p>If you don’t have Debian 4.4, or if you are unsure, <a href="#update_to_debian44">follow this guide</a>.</p>
+<p>If you don&rsquo;t have Debian 4.4, or if you are unsure, <a href="#update_to_debian44">follow this guide</a>.</p>
 
 <h2 id="use-it">Use It</h2>
 
 <p><img alt="Plug it!" src="images/hdmi_plugged_in_half.jpg" /></p>
 
-<p>The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. </p>
+<p>The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it•s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity•s sake, here•s all the details. </p>
 
 <ul>
 <li>Connect DIP to C.H.I.P.</li>
@@ -143,21 +144,17 @@ HDMI cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages
 <li>720x400</li>
 </ul>
 
-<p>HDMI DIP only does video - it does not carry an audio signal.</p>
+<h3 id="video-only">Video Only</h3>
 
-<h3 id="how-to-disconnect-the-dip">How to disconnect the DIP</h3>
+<p>HDMI DIP only does video - it does not carry an audio signal. However, the audio connectors on the 3.5mm TRRS jack and header pins still output stereo audio normally.</p>
+
+<h3 id="how-to-disconnect-the-dip">How to Disconnect the DIP</h3>
+
+<p>With great care! It&rsquo;s important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We&rsquo;ve found that the <a href="https://en.wikipedia.org/wiki/IC_extractor">IC Extractor</a> is an excellent companion if you want to frequently remove DIPs.</p>
 
 <h2 id="open-source">Open Source</h2>
 
-<p>HDMI DIP is open source. Design files are at github.com/etcetera</p>
-
-<h2 id="faq">FAQ</h2>
-
-<h3 id="can-i-play-hd-videos-on-c-h-i-p">Can I play HD videos on C.H.I.P.?</h3>
-
-<h3 id="how-can-i-hear-audio-when-i-m-using-hdmi">How can I hear audio when I’m using HDMI?</h3>
-
-<h3 id="can-i-use-the-composite-video-at-the-same-time">Can I use the composite video at the same time?</h3>
+<p>VGA DIP is open source. Design files are in our <a href="https://github.com/NextThingCo/HDMI_DIP">github repo.</a></p>
 
           <h1 id="vga-dip">VGA DIP</h1>
 
@@ -167,25 +164,22 @@ HDMI cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages
 
 <h2 id="parts-and-pieces">Parts and Pieces</h2>
 
-<p><img alt="VGA top and bottom" src="images/vga_top_and_bot.jpg" /></p>
+<h3 id="what-39-s-in-the-bag">What&rsquo;s in the Bag</h3>
 
-<h3 id="what-s-in-the-bag">What’s in the Bag</h3>
-
-<p>There is one VGA DIP in the electrostatic bag, packaged with protective foam.
-VGA cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages/store">at getchip.com</a></p>
+<p>There is one VGA DIP in the electrostatic bag, packaged with protective foam. VGA cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages/store">at getchip.com</a></p>
 
 <h3 id="pictures">Pictures</h3>
 
 <p><img alt="VGA DIP Callout Graphic" src="images/vga_callout.jpg" /></p>
 
 <ul>
-<li>RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to “bend” your VGA DIP</li>
+<li>RGB breakouts - RGB breakouts can be found at the edge of the VGA connector on the left side. These are available if you ever want to add cool effects, or to &ldquo;bend&rdquo; your VGA DIP</li>
 <li>Trim-pot breakouts (RGB) - There are three footprints for1 0K trimpots. These can be installed with only a few solder joints, and can create a really awesome visual effects like saturating colors.</li>
 <li>U14 breakouts - The U14 header breakout is directly to the left of U14. This is important if you would like to access FEL, UART, XIO, CSID, audio, etc. The name of each pin is labeled above the corresponding pad.</li>
 <li>JST connector breakout - A JST connector footprint  is available to be populated on VGA DIP. Because the VGA connector is really close to the existing JST battery connector, it makes it difficult to plug/unplug with the VGA DIP installed. Note: DO NOT INSTALL TWO BATTERIES INTO C.H.I.P. THIS WILL DAMAGE YOUR C.H.I.P. </li>
-<li>Prototyping area - There is “Proto board” on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.</li>
+<li>Prototyping area - There is &ldquo;Proto board&rdquo; on the PCB itself. This is convenient if you would like to add a small circuit to your VGA DIP, without having to add another board.</li>
 <li>VGA connector - This is a standard female DB-15 VGA connector to carry the video signal to a VGA monitor. </li>
-<li>Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a “Power On” symbol. </li>
+<li>Power switch - A Power switch has been added to the VGA DIP. It is close to impossible to access the Power On Switch on C.H.I.P with the VGA DIP installed, so we added a second Power On Switch. This is located on the right side of the PCB, and is accompanied by a &ldquo;Power On&rdquo; symbol. </li>
 </ul>
 
 <h2 id="requirements">Requirements</h2>
@@ -194,12 +188,12 @@ VGA cables and C.H.I.P.s are sold separately <a href="https://getchip.com/pages/
 <li>C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel</li>
 <li>VGA display</li>
 <li>VGA cable (we recommend a cable with Ferrite beads)
-If you don’t have Debian 4.4, or if you are unsure, <a href="getchip.com/update">follow this guide</a></li>
+If you don&rsquo;t have Debian 4.4, or if you are unsure, <a href="getchip.com/update">follow this guide</a></li>
 </ul>
 
 <h2 id="use-it">Use It</h2>
 
-<p>The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity’s sake, here’s all the details. </p>
+<p>The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it&rsquo;s really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity&rsquo;s sake, here&rsquo;s all the details. </p>
 
 <ul>
 <li>Update C.H.I.P. OS</li>
@@ -240,30 +234,33 @@ If you don’t have Debian 4.4, or if you are unsure, <a href="getchip.com/updat
 <li>720x400</li>
 </ul>
 
-<h3 id="how-to-disconnect-the-dip">How to disconnect the DIP</h3>
-
-<p>With great care! It&rsquo;s important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We&rsquo;ve found that the <a href="https://en.wikipedia.org/wiki/IC_extractor">IC Extractor</a> is an excellent companion if you want to frequently remove DIPs.</p>
-
 <h2 id="hack-it">Hack It</h2>
 
-<p>Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here&rsquo;s a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image.</p>
+<p>Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here&rsquo;s a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image. You can find <a href="http://www.bourns.com/docs/Product-Datasheets/3386.pdf">these pots</a> at vendors such as <a href="http://www.digikey.com/product-detail/en/bourns-inc/3386P-1-103TLF/3386P-103TLF-ND/1232547">digikey</a> and <a href="http://www.mouser.com/ProductDetail/Bourns/3386P-1-103TLF/?qs=sGAEpiMZZMvygUB3GLcD7rufck0TIBKysL9OZJpl%2f%2fo%3d">mouser</a></p>
 
-<p><img alt="Through hole application" src="images/vgapot_01thruhole.jpg" /></p>
+<p>Trim pots are able to go in one way on TOP of the PCB for accessibility.</p>
 
-<p><img alt="Place the pots" src="images/vgapot_02place.jpg" /></p>
+<p><img alt="able to go in one way" src="images/vgapot_01place.jpg" /></p>
 
-<p><img alt="Solder the pots to the VGA board" src="images/vgapot_03soldered.jpg" /></p>
+<p>Trim pots are sized and spaced for a precise alignment.</p>
 
-<p><img alt="Control and compose" src="images/vgapot_04allpots.jpg" /></p>
+<p><img alt="sized and spaced for a precise alignment" src="images/vgapot_02allpots.jpg" /></p>
+
+<p>Here we see that there is only one way for the pots to go on the TOP side.</p>
+
+<p><img alt="only one way for the pots to go" src="images/vgapot_03thruhole.jpg" /></p>
+
+<p>Solder the leads and trim them like so.</p>
+
+<p><img alt="Solder the leads and trim them like so." src="images/vgapot_04soldered.jpg" /></p>
+
+<p>Time to start Bending Colors!!!</p>
+
+<p><img alt="Control and Compose" src="images/vgapot_02allpots.jpg" /></p>
 
 <h2 id="open-source">Open Source</h2>
 
 <p>VGA DIP is open source. Design files are in our <a href="https://github.com/NextThingCo/VGA_DIP">github repo.</a></p>
-
-<h2 id="faq">FAQ</h2>
-
-<p>Can I play HD videos on C.H.I.P.?
-Can I use the composite video at the same time?</p>
 
           <h1 id="update-c-h-i-p-to-debian-4-4">Update C.H.I.P to Debian 4.4</h1>
 
