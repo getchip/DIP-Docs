@@ -34,12 +34,29 @@ If you don’t have Debian 4.4, or if you are unsure, [follow this guide](getchi
 ## Use It
 The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it’s really as simple as attaching the DIP to your CHIP, plugging in a VGA monitor, and booting up CHIP. But, for posterity’s sake, here’s all the details. 
 
-Update C.H.I.P. OS
-Connect DIP to C.H.I.P.
-Connect cable to DIP and monitor
-Power up C.H.I.P.
-Change resolutions with Computer Things/Settings/Display control panel
-Change resolutions with xrandr in command line
+ * Update C.H.I.P. OS
+ * Connect DIP to C.H.I.P.
+ * Connect cable to DIP and monitor
+ * Power up C.H.I.P.
+
+Once CHIP has power, you'll start seeing output on your monitor. Once CHIP is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
+
+![display control panel](images/settings_select.jpg)
+
+In the Display control panel, you can select a resolution in the Outputs menu:
+
+![Change Resolutions](images/settings_vga_resolution.jpg)
+
+After you select a resolution, you'll need to "Apply" it:
+
+![apply the new resolution](images/settings_apply.jpg)
+
+If you like using commandline in the terminal, you can change resolutions with `xrandr`, such as
+
+```shell
+xrandr 1024x768
+```
+
 Supported Resolutions
 
 ## Hack It
@@ -52,3 +69,4 @@ VGA DIP is open source. Design files are at https://github.com/NextThingCo/VGA_D
 FAQ
 Can I play HD videos on C.H.I.P.?
 Can I use the composite video at the same time?
+
