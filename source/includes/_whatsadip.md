@@ -9,9 +9,19 @@ To properly recognize official NTC DIPs, C.H.I.P.s will need to update to at lea
 
 ## Attaching DIPs
 
-![Attach the DIP](images/attach.jpg)
+Here's how you connect a DIP to C.H.I.P.
 
-Here's how you connect a DIP to C.H.I.P. Orient the USB connector opposite the video connector. Align the pins to C.H.I.P.'s headers and gently press with even force until the two pieces are joined. Tasty!
+Orient the USB connector opposite the video connector.
+
+![Attach the DIP](images/vga_attach-0.jpg)
+
+Align the pins to C.H.I.P.'s headers and gently press with even force until....
+
+![Attach the DIP](images/vga_attach-1.jpg)
+
+...the two pieces are joined. Tasty!
+
+![Attach the DIP](images/vga_attach-2.jpg)
 
 ## Disconnect the DIP
 
