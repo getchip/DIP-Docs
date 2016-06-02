@@ -66,6 +66,7 @@ xrandr -s 1280x720
 ## Know it
 
 ### Supported Resolutions
+
 We cannot provide an exhaustive list of all resolutions, since this can depend on the attached monitor, but here are some observed resolutions:
 
   * 1360x768
@@ -81,13 +82,17 @@ We cannot provide an exhaustive list of all resolutions, since this can depend o
   * 640x480
   * 720x400
 
+### Video Only
 
-HDMI DIP only does video - it does not carry an audio signal.
+HDMI DIP only does video - it does not carry an audio signal. However, the audio connectors on the 3.5mm TRRS jack and header pins still output stereo audio normally.
 
-### How to disconnect the DIP
+### How to Disconnect the DIP
+
+With great care! It's important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We've found that the [IC Extractor](https://en.wikipedia.org/wiki/IC_extractor) is an excellent companion if you want to frequently remove DIPs.
 
 ## Open Source
-HDMI DIP is open source. Design files are at github.com/etcetera
+
+VGA DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/HDMI_DIP)
 
 ## FAQ
 
