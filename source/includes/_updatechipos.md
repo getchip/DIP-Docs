@@ -18,7 +18,7 @@ Backup any important data on your C.H.I.P. before you upgrade your system. Upgra
 tar cfpz homebackup.tar.gz /home/chip
 ```
 
-You can transfer that `tar` file to another computer or cloud service from C.H.I.P. There's more detail in [this guide](https://mylinuxramblings.wordpress.com/2010/01/10/how-to-backup-and-restore-your-home-directory/) if you want more detail.
+You can transfer that `tar` file to another computer or cloud service from C.H.I.P. There's more to learn in [this detailed guide](https://mylinuxramblings.wordpress.com/2010/01/10/how-to-backup-and-restore-your-home-directory/).
 
 If you have installed a lot of packages with Synaptic or `apt`, and would like to be able to be able to easily re-install those packages, there's some good [guides](http://www.debianadmin.com/clone-your-ubuntu-installation.html) and [suggestions](http://serverfault.com/questions/175504/how-do-i-get-the-history-of-apt-get-install-on-ubuntu) on the web.
 
