@@ -15,7 +15,7 @@ Look for a number in appended with `-ntc`, for example `4.3.0` or `4.4.0`. This 
 Backup any important data on your C.H.I.P. before you upgrade your system. Upgrading will overwrite all of the C.H.I.P. storage. You can backup your user directory with a simple command in the Terminal emulator:
 
 ```shell
-tar cfpz homebackup.tar.gz /home/chip
+tar cfpzv homebackup.tar.gz /home/chip
 ```
 
 You can transfer that `tar` file to another computer or cloud service from C.H.I.P. There's more to learn in [this detailed guide](https://mylinuxramblings.wordpress.com/2010/01/10/how-to-backup-and-restore-your-home-directory/).
