@@ -11,7 +11,7 @@ The HDMI DIP makes C.H.I.P. even better for traditional uses like presentations,
 
 ### What's in the Bag?
 
-There is one HDMI DIP in the electrostatic bag, packaged with protective foam.'HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
+There is one HDMI DIP in the electrostatic bag, packaged with protective foam. HDMI cables and C.H.I.P.s are sold separately [at getchip.com](https://getchip.com/pages/store)
 
 ### Pictures
 
@@ -36,7 +36,7 @@ If you don't have Debian 4.4, or if you are unsure, [follow this guide](#update_
 
 ![Plug it!](images/hdmi_plugged_in_half.jpg)
 
-The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it•s really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity•s sake, here•s all the details. 
+The HDMI DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it's really as simple as attaching the DIP to your C.H.I.P, plugging in an HDMI monitor, and booting up C.H.I.P. But, for posterity's sake, here's all the details. 
 
  * Connect DIP to C.H.I.P.
  * Connect cable to DIP and monitor
