@@ -44,6 +44,7 @@ There are some vendor IDs that are reserved.
 ### Existing Products
 
 So far, these official DIPs exist:
+
   * PocketC.H.I.P. (VID=0x009d011a, PID=0x00000001)
   * VGA DIP (VID=0x009d011a, PID=0x00000002)
   * HDMI DIP (VID=0x0090d011a, PID=0x00000003)
