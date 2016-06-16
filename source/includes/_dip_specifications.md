@@ -19,6 +19,7 @@ Because this is actually the **only** requirement for an extension board to comp
 The data is structured as follows:
 
 |Offset | Length | Name | Description|
+|---|---|---|---|
 |0x00 | 4 | MAGIC | Header to identify a DIP, must be ‘C’,’H’,’I’,’P’|
 |0x04 | 1 | VERSION | Version of the data format|
 |0x05 | 4 | VENDOR ID | 32-bit vendor ID, must be unique|
