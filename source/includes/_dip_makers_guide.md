@@ -12,6 +12,7 @@ git clone https://github.com/NextThingCo/CHIP-dt-overlays.git
 ```
 
 This repository has some very useful directories and files for getting your DIP working with your C.H.I.P.:
+
   * **samples/** - some basic examples
   * **nextthingco/** - NTC DIP overlay examples
   * **fimware/** - example of a DTS that would compile to DTBO that would load with EEPROM
@@ -39,6 +40,7 @@ The settings needed for the overlay for the components on the bus are usually pr
 The following protocols can be enabled and configured with Device Tree Overlay files. Each protocol can be configured with a "fragment" in a DTO. Because some of these functions share pins, not all of these can be enabled at once. For example, if SPI2 is enabled, then it would not be possible to enable the CSI interface, since they share pins on U14.
 
 | **Device/Protocol** | **Target name** |
+|---|---|
 | Two Wire Serial (I2C) | <&i2c0> or <&i2c1> or <&i2c2> |
 | Touch Screen | <&rtp> |
 | LCD display |  multiple(+)  |
@@ -52,6 +54,7 @@ The following protocols can be enabled and configured with Device Tree Overlay f
 (+) *several device and bus targets are used for an LCD display. See the PocketC.H.I.P. overlay in the DDK repo at nextthingco/dip-pocket.dts*
 
 These protocols are enabled on C.H.I.P. by default. It is extremely unlikely your DIP would benefit from additional configuration with a DTO:
+
   * One Wire Serial
   * UART Serial
   * Audio I/O
@@ -194,6 +197,7 @@ Once you have a final product, you can place the EEPROM chip on the 1wire bus, a
 With your finished board, you are now ready to flash the EEPROM with your unique data. The "tools/" directory in the DDK has a simple python script that can be used to generate a file that can be written to the hardware. 
 
 Let's make up some values that you'll need to write to the EEPROM. 
+
   * vendor ID (vid) = 0x16 (22) [32 bit]
   * product ID (pid) = 0x44 (68) [16 bit]
   * vendor = RadCo [32 characters]
@@ -307,13 +311,3 @@ setenv dip_overlay_cmd 'ubifsload $dip_addr_r $dip_overlay_dir/$dip_overlay_name
 ```
 
 This process will soon be unneeded, as these commands will be rolled into U-Boot.
-
-# F.A.Q.
-
-## Can I sell a C.H.I.P. extension board without complying to all (or any) the C.H.I.P. DIP specifications?
-
-That's perfectly fine - just don't call it a DIP!
-
-## What do I have to pay to get my extension DIP certified?
-
-Nothing! In case your extension complies the C.H.I.P. specifications, it will be listed in the C.H.I.P. directory - the C.H.I.P community will judge on whether the extension is fully compliant or not.
