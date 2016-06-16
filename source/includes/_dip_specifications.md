@@ -37,6 +37,7 @@ Each DIP must have a unique combination of vendor and product id for C.H.I.P. to
 ### Reserved VIDs
 
 There are some vendor IDs that are reserved.
+
   * Next Thing Co uses **0x009d011a** as VID.
   * VIDs **0x00000000 - 0x0000000f** reserved for prototyping.
 
