@@ -11,8 +11,8 @@ There is no form factor for DIPs - go and surprise us! A DIP could host just a t
 C.H.I.P. needs to know which extension board is attached in order to configure Linux accordingly. To do this, C.H.I.P. checks for a 1wire EEPROM at boot time.
 If a 1wire EEPROM is detected, its data is read, and if C.H.I.P. recognizes a supported DIP, it automatically sets up the software accordingly ([using a device tree overlay](#dip-maker-s-Guide)).
 
-The 1wire EEPROM needs to be connected to the **LCD_D2** pin on [pin header U13](chip.html#pin-headers) and should be able to store a least 122 bytes (see data-format below). The DS2421 is a common eeprom that works well for this.
-Because this is actually the **only** requirement for an extension board to comply the DIP specification.
+The 1wire EEPROM needs to be connected to the **LCD_D2** pin on [pin header U13](chip.html#pin-headers) and should be able to store a least 122 bytes (see data-format below). The DS2431 is a common EEPROM part that works well for this.
+This readable EEPROM is actually the **only** requirement for an extension board to comply with the DIP specification.
 
 ## Data Format
 
