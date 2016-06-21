@@ -27,16 +27,18 @@ There is one VGA DIP in the electrostatic bag, packaged with protective foam. VG
  * C.H.I.P. with C.H.I.P. OS 1.1 with Debian 4.4 kernel
  * VGA display
  * 15-pin VGA cable (we recommend a cable with [Ferrite beads](https://en.wikipedia.org/wiki/Ferrite_bead))
+ * 2A+ power adapter and micro USB cable
 
 If you don't have Debian 4.4, or if you are unsure, [follow this guide](getchip.com/update)
 
 ## Use It
 
-The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it's really as simple as attaching the DIP to your C.H.I.P, plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity's sake, here's all the details. 
+The VGA DIP is extremely easy to use. Once you have your C.H.I.P. OS updated, it's really as simple as attaching the DIP to your C.H.I.P, adding power to C.H.I.P., plugging in a VGA monitor, and booting up C.H.I.P. But, for posterity's sake, here's all the details. 
 
  * Update C.H.I.P. OS
  * Connect DIP to C.H.I.P.
  * Connect cable to DIP and monitor
+ * Connect C.H.I.P. to power supply
  * Power up C.H.I.P.
 
 Once C.H.I.P has power, you'll start seeing output on your monitor. Once C.H.I.P is booted, you may want to change the resolution. You can do this with the control panel found in the Computer Things menu, going to Settings/Display 
