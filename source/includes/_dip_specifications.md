@@ -32,7 +32,7 @@ The data is structured as follows:
 
 ## Vendor ID and Product ID
 
-Each DIP must have a unique combination of vendor and product id for C.H.I.P. to recognize it. **Please** [contact us](mailto:ahoyahoy@nextthing.co) to get your vendor id if you want to make a DIP. Even if you don't want to sell it, it's worth getting an ID, to prevent the chance of your DIP confusing C.H.I.P.
+Each DIP must have a unique combination of vendor and product id for C.H.I.P. to recognize it. We have a very simple, open system for makers to register vendor IDs [self-contained in a github repository](https://github.com/NextThingCo/DIPvendor). Even if you don't want to sell it, it's worth getting an ID, to prevent the chance of your DIP confusing C.H.I.P. in the future.
 
 ### Reserved VIDs
 
