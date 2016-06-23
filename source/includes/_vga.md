@@ -74,7 +74,9 @@ We cannot provide an exhaustive list of all resolutions, since this can depend o
   * 720x400
 
 ## Hack It
+The VGA DIP is hackable. There are breakouts for the headers and a small proto-board area so you can add some simple circuits. There's also access to the RGB signals for extra colorful fun! Here are a couple example hacks that bring joy and utility to your VGA DIP.
 
+### RGB Trim Pots
 Heat up your soldering iron, the VGA DIP is hackable. You may have noticed the pads suitably spaced for 10K trim pots, and the RGB breakouts. Here's a photo guide to soldering up some trim pots so you can manually adjust the individual red, green, and blue levels in the image. You can find [these pots](http://www.bourns.com/docs/Product-Datasheets/3386.pdf) at vendors such as [digikey](http://www.digikey.com/product-detail/en/bourns-inc/3386P-1-103TLF/3386P-103TLF-ND/1232547) and [mouser](http://www.mouser.com/ProductDetail/Bourns/3386P-1-103TLF/?qs=sGAEpiMZZMvygUB3GLcD7rufck0TIBKysL9OZJpl%2f%2fo%3d)
 
 Trim pots are able to go in one way on TOP of the PCB for accessibility.
@@ -96,6 +98,16 @@ Solder the leads and trim them like so.
 Time to start Bending Colors!!!
 
 ![Control and Compose](images/vgapot_02allpots.jpg)
+
+### UART Connection
+
+Another example is adding a pin header so you can access C.H.I.P.'s UART bus. This image shows an VGA DIP with the added pin header soldered in place:
+
+![pin headers for UART passthrough to CHIP](images/vga_uart_placement.jpg)
+
+and the receive, transmit, and ground wires of a USB-UART cable connecting CHIP to a computer's serial bus:
+
+![uart artfully applied](images/vga_uart_cnxn.jpg)
 
 ## Open Source
 

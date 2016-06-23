@@ -89,6 +89,16 @@ HDMI DIP only does video - it does not carry an audio signal. However, the audio
 
 With great care! It's important to pull with an even force to separate the DIP from the CHIP. You do not want bent header pins on your DIP! We've found that the [IC Extractor](https://en.wikipedia.org/wiki/IC_extractor) is an excellent companion if you want to frequently remove DIPs.
 
+## Hack It
+
+The HDMI DIP is hackable. There are breakouts for the headers and a small proto-board area so you can add some simple circuits. One example is adding a pin header so you can access C.H.I.P.'s UART bus. This image shows an HDMI DIP with the added pin header soldered in place:
+
+![pin headers for UART passthrough to CHIP](images/hdmi_uart_placement.jpg)
+
+and the receive, transmit, and ground wires of a USB-UART cable connecting CHIP to a computer's serial bus:
+
+![uart artfully applied](images/hdmi_uart_cnxn.jpg)
+
 ## Open Source
 
 The HDMI DIP is open source. Design files are in our [github repo.](https://github.com/NextThingCo/DIP-HDMI-PCB)
