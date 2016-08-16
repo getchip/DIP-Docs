@@ -244,10 +244,12 @@ dip-16-44.dtbo
 then
 
 ```shell
-sudo mkdir -p /lib/firmware/nextthing/chip && sudo cp dip-16-44.dtbo /lib/firmware/nextthing/chip
+sudo mkdir -p /lib/firmware/nextthingco/chip && sudo cp dip-16-44.dtbo /lib/firmware/nextthingco/chip
 ```
 
-to put it in `/lib/firmware/nextthing/chip/` to ensure the overlay is loaded on EEPROM detection. 
+to put it in `/lib/firmware/nextthingco/chip/` to ensure the overlay is loaded on EEPROM detection.
+
+You may also need to make sure that the w1_ds2431 module loads on boot so the EEPROM module can be found and read. You simply need to modify the configuration file with a text editor `sudo nano /etc/modules.d/modules.conf` and add this line to the end: `w1_ds2431`
 
 ### Use DIP with software
 Now you are ready to use your DIP with software. How you control your DIP with C.H.I.P. is really up to you. This procedure simply makes the DIP's parts available to the operating system for further control. 
