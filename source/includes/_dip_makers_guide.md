@@ -167,7 +167,7 @@ sudo mount -t configfs none /sys/kernel/config
 then make a place for the overlay and catenate your blob:
 
 ```shell
-sudo mkdir /sys/kernel/config/device-tree/overlays/DIPexample
+sudo mkdir -p /sys/kernel/config/device-tree/overlays/DIPexample
 su -c 'cat irtempi2c.dtbo > /sys/kernel/config/device-tree/overlays/DIPexample/dtbo'
 ```
 
