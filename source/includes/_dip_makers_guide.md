@@ -147,7 +147,7 @@ make
 sudo  make install PREFIX=/usr
 ```
 
-The easy way to compile is to put your .dts file in the "samples/" directory of the repo's root directory, then, from the root of the repo, just run `make`. This produces a .dtbo (device tree blob) file in the same directory as the .dts file.
+The easy way to compile is to put your .dts file in the "samples/" directory of the `CHIP-dt-overlays` directory, then, from the root of this repository, just run `make`. This produces a .dtbo (device tree blob) file in the "samples/" directory with the .dts file.
 
 The Makefile is designed to look in the "samples/" and "firmware/" directories for .dts files and compile them to .dtbo files using this command:
 
