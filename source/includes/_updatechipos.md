@@ -1,4 +1,4 @@
-﻿# Update C.H.I.P to Debian 4.4
+﻿# Update C.H.I.P to Linux kernel 4.4
 DIPs require that C.H.I.P. is running the Debian 4.4 Linux kernel. Here's a detailed guide to determining if you need to update and how to update using our web flasher.
 
 ## Determine C.H.I.P.’s Kernel Version
